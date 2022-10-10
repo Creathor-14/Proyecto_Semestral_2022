@@ -1,0 +1,20 @@
+Login:
+	- header:(dejarlo en la parte de arriba).
+	- usar tab: al usar tab que desaparesca el texto del textFild.
+	- usar enter: que reconosca si existe o no el usuario y su contraseña.
+Menu:
+	- header:(dejarlo en la parte de arriba).
+	- Que los botones lleven a una nueva pestaña.
+Ingresar:
+	- todo.
+Actualizar:
+	- todo.
+Eliminar:
+	-todo.
+Extra:
+	- Mejorar los pixeles del logo.
+	- Buscar un diseño mejor.
+	- Utilizar una base de dato.
+	- Buscar Errores.
+Errores:
+	- ¿?
