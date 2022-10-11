@@ -262,7 +262,7 @@ public class Login extends javax.swing.JFrame {
                 new Menu().setVisible(true);
                 dispose();
             }else{
-                 JOptionPane.showMessageDialog(null,"False");
+                 JOptionPane.showMessageDialog(null,"El usuario no existe");
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null,e.getMessage());
@@ -304,8 +304,19 @@ public class Login extends javax.swing.JFrame {
         //ver si existe el usuario en el sistema
 
         if(evt.getKeyCode()==10){
-            new Menu().setVisible(true);
-            dispose();
+            String usuario = jTextField_usuario.getText();
+            String contraseña = jPasswordField_contraseña.getText();
+            try {
+                boolean existe = new Impl_prueba().login(usuario, contraseña);
+                if(existe){
+                    new Menu().setVisible(true);
+                    dispose();
+                }else{
+                     JOptionPane.showMessageDialog(null,"El usuario no existe");
+                }
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null,e.getMessage());
+            }
         }
     }//GEN-LAST:event_jPasswordField_contraseñaKeyPressed
 

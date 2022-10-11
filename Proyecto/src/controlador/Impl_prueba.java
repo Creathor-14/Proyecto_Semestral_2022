@@ -24,12 +24,9 @@ public class Impl_prueba{
             if(contraseña.equals("contraseña")){
                 return true;//usuario y contraseña correctos
             }else{
-                //contraseña incorrecta
+                throw new NullPointerException("Contraseña incorrecta.");
             }
-        }else{
-            //usuario incorrecto
         }
-        
         return false;
     }
 

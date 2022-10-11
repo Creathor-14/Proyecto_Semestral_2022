@@ -313,8 +313,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel_salirMouseClicked
 
     private void jLabel_AccederMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_AccederMouseClicked
-        //ver si existe el usuario en el sistema
-        //new Menu().setVisible(true);
+        new Ingresar().setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel_AccederMouseClicked
 
@@ -327,7 +326,8 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel_Acceder2MouseClicked
 
     private void jLabel_Acceder3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_Acceder3MouseClicked
-        // TODO add your handling code here:
+        new Login().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jLabel_Acceder3MouseClicked
 
 
