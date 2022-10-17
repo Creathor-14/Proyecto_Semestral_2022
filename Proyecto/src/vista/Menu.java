@@ -318,7 +318,8 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel_AccederMouseClicked
 
     private void jLabel_Acceder1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_Acceder1MouseClicked
-        // TODO add your handling code here:
+        new Actualizar().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jLabel_Acceder1MouseClicked
 
     private void jLabel_Acceder2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_Acceder2MouseClicked
