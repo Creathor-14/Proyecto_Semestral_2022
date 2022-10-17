@@ -32,6 +32,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel_Acceder2 = new javax.swing.JLabel();
         jPanel_cerrar_sesion = new javax.swing.JPanel();
         jLabel_Acceder3 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jPanel_diseño = new javax.swing.JPanel();
         logo = new javax.swing.JLabel();
         nombre_empresa = new javax.swing.JLabel();
@@ -248,6 +249,9 @@ public class Menu extends javax.swing.JFrame {
 
         jPanel_interaccion.add(jPanel_cerrar_sesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 390, -1, -1));
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "[\"Seleccione\"]", "Videojuego", "Vendedor", "Desarrollador", "Cliente" }));
+        jPanel_interaccion.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, -1, -1));
+
         jPanel_diseño.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.png"))); // NOI18N
@@ -323,7 +327,8 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel_Acceder1MouseClicked
 
     private void jLabel_Acceder2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_Acceder2MouseClicked
-        // TODO add your handling code here:
+        new Eliminar().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jLabel_Acceder2MouseClicked
 
     private void jLabel_Acceder3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_Acceder3MouseClicked
@@ -334,6 +339,7 @@ public class Menu extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel_Acceder;
     private javax.swing.JLabel jLabel_Acceder1;
