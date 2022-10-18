@@ -35,4 +35,12 @@ public class ColeccionUsuario {
         }
         this.lista.add(new Usuario(fechaN, comuna, telefono, rut, nombre, direccion, correo));
     }
+    public void actualizar(int posicion, String fechaN, String comuna, String telefono, String nombre, String direccion){
+        Usuario u = lista.get(posicion);
+        u.setFechaN(fechaN);
+        u.setComuna(comuna);
+        u.setTelefono(telefono);
+        u.setNombre(nombre);
+        u.setDireccion(direccion);
+    }
 }

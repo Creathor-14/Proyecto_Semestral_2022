@@ -36,4 +36,10 @@ public class ColeccionVendedor {
         }
         this.lista.add(new Vendedor(fono, rut, nombre, direccion, correo));
     }
+    public void actualizar(int posicion,String fono, String nombre, String direccion){
+        Vendedor v = lista.get(posicion);
+        v.setFono(fono);
+        v.setNombre(nombre);
+        v.setDireccion(direccion);
+    }
 }
