@@ -10,6 +10,7 @@ public class ColeccionDesarrollador {
     public ColeccionDesarrollador() {
         this.lista = new ArrayList <>();
     }
+    
     public boolean rutUnico(String rut){
         for(Desarrollador d : lista){
             if(d.getRut().equals(rut)){
@@ -28,7 +29,7 @@ public class ColeccionDesarrollador {
     }
     
     /**
-     * Esta funcion esta encargada de agregar Desarrolladores a la coleccion, estos tienen un rut y correo unico.
+     * Agrega un desarrolladores a la coleccion, estos tienen un rut y correo unico.
      * @param fono
      * @param rut
      * @param nombre
@@ -46,7 +47,7 @@ public class ColeccionDesarrollador {
     }
     
     /**
-     * Busca un desarrollador por su rut, y retorna la posicion en la que se encuentra
+     * Busca un desarrollador por su rut, y retorna la posicion en la que se encuentra.
      * @param rut
      * @return 
      */
@@ -62,7 +63,7 @@ public class ColeccionDesarrollador {
     }
     
     /**
-     * Esta funcion esta encargada de actualizar los datos de un desarrollador en una posicion dada
+     * Esta funcion esta encargada de actualizar los datos de un desarrollador en una posicion dada.
      * @param posicion
      * @param fono
      * @param nombre
