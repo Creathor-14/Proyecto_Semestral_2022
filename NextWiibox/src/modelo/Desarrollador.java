@@ -1,5 +1,4 @@
-package Modelo;
-
+package modelo;
 
 public class Desarrollador extends Persona {
     private String fono;

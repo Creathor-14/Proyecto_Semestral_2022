@@ -1,5 +1,4 @@
-package Modelo;
-
+package modelo;
 
 public class Usuario extends Persona {
     
@@ -47,8 +46,6 @@ public class Usuario extends Persona {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-
-    
 
     @Override
     public String toString() {

@@ -1,5 +1,4 @@
-package Modelo;
-
+package modelo;
 
 public class Persona {
     private String rut;
