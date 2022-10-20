@@ -38,6 +38,7 @@ public class Login extends javax.swing.JPanel {
         jSeparator_contraseña1 = new javax.swing.JSeparator();
         jPanel_entrar1 = new javax.swing.JPanel();
         jLabel_Acceder1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         login.setBackground(new java.awt.Color(51, 51, 51));
         login.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -127,6 +128,19 @@ public class Login extends javax.swing.JPanel {
 
         login.add(jPanel_entrar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 261, -1, -1));
 
+        jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        login.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -169,7 +183,7 @@ public class Login extends javax.swing.JPanel {
 
     private void jLabel_Acceder1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_Acceder1MouseClicked
         //Ani //internet = new AnimationClass();
-        System.out.println("Yas");
+        
         // Llamar a un panel
         //https://www.youtube.com/watch?v=iFlHGwmYdjI&t=1s
         Menu menu = new Menu();
@@ -181,22 +195,28 @@ public class Login extends javax.swing.JPanel {
         login.revalidate();
         login.repaint();
 
-        /*movimiento animado
-        if(estado){
-            System.err.println("mover der");
-            this.estado = false;
-            //Izq(jPanel2, 1, 1, 140);
-
-        }else{
-            System.out.println("mover izq");
-            this.estado = true;
-            //Der(jPanel2, 1, 2, 0);
-
-        }*/
+        
     }//GEN-LAST:event_jLabel_Acceder1MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+        IngresarDesarrollador ingresardesarrollador = new IngresarDesarrollador();
+        ingresardesarrollador.setSize(660, 460);
+        ingresardesarrollador.setLocation(0,0);
+
+        login.removeAll();
+        login.add(ingresardesarrollador,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
+        login.revalidate();
+        login.repaint();
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel_Acceder1;
     private javax.swing.JLabel jLabel_Titulo1;
     private javax.swing.JLabel jLabel_contraseña1;

@@ -6,16 +6,15 @@ package vista;
 
 /**
  *
- * @author thoma
+ * @author reeso
  */
-public class IngresarUsuario extends javax.swing.JPanel {
+public class IngresarVendedor extends javax.swing.JPanel {
 
     /**
-     * Creates new form IngresarUsuario
+     * Creates new form IngresarVendedor
      */
-    public IngresarUsuario() {
+    public IngresarVendedor() {
         initComponents();
-        
     }
 
     /**
@@ -27,7 +26,8 @@ public class IngresarUsuario extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ingresarUsuario = new javax.swing.JPanel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        ingresarVendedor = new javax.swing.JPanel();
         jLabel_Titulo = new javax.swing.JLabel();
         jLabel_rut = new javax.swing.JLabel();
         jTextField_rut = new javax.swing.JTextField();
@@ -38,40 +38,36 @@ public class IngresarUsuario extends javax.swing.JPanel {
         jLabel_correo = new javax.swing.JLabel();
         jTextField_correo = new javax.swing.JTextField();
         jSeparator_correo = new javax.swing.JSeparator();
-        jLabel_comuna = new javax.swing.JLabel();
-        jTextField_comuna = new javax.swing.JTextField();
-        jSeparator_comuna = new javax.swing.JSeparator();
         jLabel_direccion = new javax.swing.JLabel();
         jTextField_direccion = new javax.swing.JTextField();
         jSeparator_direccion = new javax.swing.JSeparator();
         jLabel_telefono = new javax.swing.JLabel();
         jTextField_telefono = new javax.swing.JTextField();
         jSeparator_telefono = new javax.swing.JSeparator();
-        jLabel_fNac = new javax.swing.JLabel();
-        jTextField_fNac = new javax.swing.JTextField();
-        jSeparator_fNac = new javax.swing.JSeparator();
+        jLabel_clave = new javax.swing.JLabel();
+        jTextField_clave = new javax.swing.JTextField();
+        jSeparator_clave = new javax.swing.JSeparator();
         jPanel_menu = new javax.swing.JPanel();
         jLabel_menu = new javax.swing.JLabel();
         jPanel_registrar = new javax.swing.JPanel();
         jLabel_registrar = new javax.swing.JLabel();
 
-        setMaximumSize(new java.awt.Dimension(138, 25));
-        setMinimumSize(new java.awt.Dimension(138, 25));
-        setPreferredSize(new java.awt.Dimension(610, 460));
+        jPasswordField1.setText("jPasswordField1");
 
-        ingresarUsuario.setBackground(new java.awt.Color(51, 51, 51));
-        ingresarUsuario.setMinimumSize(new java.awt.Dimension(0, 0));
-        ingresarUsuario.setPreferredSize(new java.awt.Dimension(610, 460));
-        ingresarUsuario.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        setPreferredSize(new java.awt.Dimension(660, 460));
+
+        ingresarVendedor.setBackground(new java.awt.Color(51, 51, 51));
+        ingresarVendedor.setPreferredSize(new java.awt.Dimension(610, 460));
+        ingresarVendedor.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
-                ingresarUsuarioMouseDragged(evt);
+                ingresarVendedorMouseDragged(evt);
             }
         });
 
         jLabel_Titulo.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_Titulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel_Titulo.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_Titulo.setText("Ingresar Usuario");
+        jLabel_Titulo.setText("Ingresar Vendedor");
 
         jLabel_rut.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_rut.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -150,30 +146,6 @@ public class IngresarUsuario extends javax.swing.JPanel {
             }
         });
 
-        jLabel_comuna.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel_comuna.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_comuna.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_comuna.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_comuna.setText("Comuna:");
-
-        jTextField_comuna.setBackground(new java.awt.Color(51, 51, 51));
-        jTextField_comuna.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField_comuna.setText("San Joaquin");
-        jTextField_comuna.setBorder(null);
-        jTextField_comuna.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField_comunaMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jTextField_comunaMouseEntered(evt);
-            }
-        });
-        jTextField_comuna.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField_comunaKeyPressed(evt);
-            }
-        });
-
         jLabel_direccion.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_direccion.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_direccion.setForeground(new java.awt.Color(255, 255, 255));
@@ -216,33 +188,38 @@ public class IngresarUsuario extends javax.swing.JPanel {
                 jTextField_telefonoMouseEntered(evt);
             }
         });
+        jTextField_telefono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_telefonoActionPerformed(evt);
+            }
+        });
         jTextField_telefono.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField_telefonoKeyPressed(evt);
             }
         });
 
-        jLabel_fNac.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel_fNac.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_fNac.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_fNac.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_fNac.setText("Fecha nacimiento:");
+        jLabel_clave.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel_clave.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel_clave.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel_clave.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jLabel_clave.setText("Clave:");
 
-        jTextField_fNac.setBackground(new java.awt.Color(51, 51, 51));
-        jTextField_fNac.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField_fNac.setText("DD/MM/YYYY");
-        jTextField_fNac.setBorder(null);
-        jTextField_fNac.addMouseListener(new java.awt.event.MouseAdapter() {
+        jTextField_clave.setBackground(new java.awt.Color(51, 51, 51));
+        jTextField_clave.setForeground(new java.awt.Color(102, 102, 102));
+        jTextField_clave.setText("DD/MM/YYYY");
+        jTextField_clave.setBorder(null);
+        jTextField_clave.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField_fNacMouseClicked(evt);
+                jTextField_claveMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jTextField_fNacMouseEntered(evt);
+                jTextField_claveMouseEntered(evt);
             }
         });
-        jTextField_fNac.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextField_clave.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField_fNacKeyPressed(evt);
+                jTextField_claveKeyPressed(evt);
             }
         });
 
@@ -312,134 +289,124 @@ public class IngresarUsuario extends javax.swing.JPanel {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        javax.swing.GroupLayout ingresarUsuarioLayout = new javax.swing.GroupLayout(ingresarUsuario);
-        ingresarUsuario.setLayout(ingresarUsuarioLayout);
-        ingresarUsuarioLayout.setHorizontalGroup(
-            ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(250, 250, 250)
-                .addComponent(jLabel_Titulo))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel_rut, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jTextField_rut, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(260, 260, 260)
-                .addComponent(jSeparator_rut, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jTextField_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(260, 260, 260)
-                .addComponent(jSeparator_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jTextField_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(260, 260, 260)
-                .addComponent(jSeparator_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel_comuna, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jTextField_comuna, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(260, 260, 260)
-                .addComponent(jSeparator_comuna, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jTextField_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(260, 260, 260)
-                .addComponent(jSeparator_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jTextField_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(260, 260, 260)
-                .addComponent(jSeparator_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel_fNac, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jTextField_fNac, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(260, 260, 260)
-                .addComponent(jSeparator_fNac, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
-                .addGap(170, 170, 170)
-                .addComponent(jPanel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(120, 120, 120)
-                .addComponent(jPanel_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        javax.swing.GroupLayout ingresarVendedorLayout = new javax.swing.GroupLayout(ingresarVendedor);
+        ingresarVendedor.setLayout(ingresarVendedorLayout);
+        ingresarVendedorLayout.setHorizontalGroup(
+            ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                        .addGap(250, 250, 250)
+                        .addComponent(jLabel_Titulo))
+                    .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addComponent(jLabel_rut, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jTextField_rut, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                        .addGap(260, 260, 260)
+                        .addComponent(jSeparator_rut, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addComponent(jLabel_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jTextField_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                        .addGap(260, 260, 260)
+                        .addComponent(jSeparator_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                        .addGap(170, 170, 170)
+                        .addComponent(jPanel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(120, 120, 120)
+                        .addComponent(jPanel_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                                    .addComponent(jLabel_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jTextField_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                                    .addGap(140, 140, 140)
+                                    .addComponent(jSeparator_clave, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                                    .addComponent(jLabel_clave, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(10, 10, 10)
+                                    .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jSeparator_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField_clave, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                                    .addComponent(jLabel_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jTextField_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                                    .addGap(142, 142, 142)
+                                    .addComponent(jSeparator_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jSeparator_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(ingresarVendedorLayout.createSequentialGroup()
+                                        .addComponent(jLabel_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jTextField_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                .addContainerGap(282, Short.MAX_VALUE))
         );
-        ingresarUsuarioLayout.setVerticalGroup(
-            ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ingresarUsuarioLayout.createSequentialGroup()
+        ingresarVendedorLayout.setVerticalGroup(
+            ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ingresarVendedorLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(jLabel_Titulo)
                 .addGap(25, 25, 25)
-                .addGroup(ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel_rut)
                     .addComponent(jTextField_rut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addComponent(jSeparator_rut, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel_nombre)
                     .addComponent(jTextField_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addComponent(jSeparator_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel_correo)
                     .addComponent(jTextField_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel_comuna)
-                    .addComponent(jTextField_comuna, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addComponent(jSeparator_comuna, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel_direccion)
-                    .addComponent(jTextField_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_direccion))
+                .addGap(3, 3, 3)
                 .addComponent(jSeparator_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel_telefono)
                     .addComponent(jTextField_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel_fNac)
-                    .addComponent(jTextField_fNac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addComponent(jSeparator_fNac, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addGroup(ingresarUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel_clave)
+                    .addComponent(jTextField_clave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jSeparator_clave, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64)
+                .addGroup(ingresarVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jPanel_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 610, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(ingresarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addComponent(ingresarVendedor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 814, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 460, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(ingresarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ingresarVendedor, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -450,6 +417,10 @@ public class IngresarUsuario extends javax.swing.JPanel {
     private void jTextField_rutMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField_rutMouseEntered
         //BORRAR
     }//GEN-LAST:event_jTextField_rutMouseEntered
+
+    private void jTextField_rutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_rutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_rutActionPerformed
 
     private void jTextField_rutKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_rutKeyPressed
         //hacer que con el tab desaparesca ************
@@ -480,18 +451,6 @@ public class IngresarUsuario extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_correoKeyPressed
 
-    private void jTextField_comunaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField_comunaMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_comunaMouseClicked
-
-    private void jTextField_comunaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField_comunaMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_comunaMouseEntered
-
-    private void jTextField_comunaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_comunaKeyPressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_comunaKeyPressed
-
     private void jTextField_direccionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField_direccionMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_direccionMouseClicked
@@ -516,49 +475,48 @@ public class IngresarUsuario extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_telefonoKeyPressed
 
-    private void jTextField_fNacMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField_fNacMouseClicked
+    private void jTextField_claveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField_claveMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_fNacMouseClicked
+    }//GEN-LAST:event_jTextField_claveMouseClicked
 
-    private void jTextField_fNacMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField_fNacMouseEntered
+    private void jTextField_claveMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField_claveMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_fNacMouseEntered
+    }//GEN-LAST:event_jTextField_claveMouseEntered
 
-    private void jTextField_fNacKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_fNacKeyPressed
+    private void jTextField_claveKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_claveKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_fNacKeyPressed
+    }//GEN-LAST:event_jTextField_claveKeyPressed
 
     private void jLabel_menuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_menuMouseClicked
         Menu menu = new Menu();
         menu.setSize(660, 460);
         menu.setLocation(0,0);
 
-        ingresarUsuario.removeAll();
-        ingresarUsuario.add(menu,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
-        ingresarUsuario.revalidate();
-        ingresarUsuario.repaint();
+        ingresarVendedor.removeAll();
+        ingresarVendedor.add(menu,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
+        ingresarVendedor.revalidate();
+        ingresarVendedor.repaint();
     }//GEN-LAST:event_jLabel_menuMouseClicked
 
     private void jLabel_registrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_registrarMouseClicked
 
     }//GEN-LAST:event_jLabel_registrarMouseClicked
 
-    private void ingresarUsuarioMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingresarUsuarioMouseDragged
+    private void ingresarVendedorMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingresarVendedorMouseDragged
         //BORRAR
-    }//GEN-LAST:event_ingresarUsuarioMouseDragged
+    }//GEN-LAST:event_ingresarVendedorMouseDragged
 
-    private void jTextField_rutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_rutActionPerformed
+    private void jTextField_telefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_telefonoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_rutActionPerformed
+    }//GEN-LAST:event_jTextField_telefonoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel ingresarUsuario;
+    private javax.swing.JPanel ingresarVendedor;
     private javax.swing.JLabel jLabel_Titulo;
-    private javax.swing.JLabel jLabel_comuna;
+    private javax.swing.JLabel jLabel_clave;
     private javax.swing.JLabel jLabel_correo;
     private javax.swing.JLabel jLabel_direccion;
-    private javax.swing.JLabel jLabel_fNac;
     private javax.swing.JLabel jLabel_menu;
     private javax.swing.JLabel jLabel_nombre;
     private javax.swing.JLabel jLabel_registrar;
@@ -566,17 +524,16 @@ public class IngresarUsuario extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel_telefono;
     private javax.swing.JPanel jPanel_menu;
     private javax.swing.JPanel jPanel_registrar;
-    private javax.swing.JSeparator jSeparator_comuna;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JSeparator jSeparator_clave;
     private javax.swing.JSeparator jSeparator_correo;
     private javax.swing.JSeparator jSeparator_direccion;
-    private javax.swing.JSeparator jSeparator_fNac;
     private javax.swing.JSeparator jSeparator_nombre;
     private javax.swing.JSeparator jSeparator_rut;
     private javax.swing.JSeparator jSeparator_telefono;
-    private javax.swing.JTextField jTextField_comuna;
+    private javax.swing.JTextField jTextField_clave;
     private javax.swing.JTextField jTextField_correo;
     private javax.swing.JTextField jTextField_direccion;
-    private javax.swing.JTextField jTextField_fNac;
     private javax.swing.JTextField jTextField_nombre;
     private javax.swing.JTextField jTextField_rut;
     private javax.swing.JTextField jTextField_telefono;
