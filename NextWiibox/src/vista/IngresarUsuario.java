@@ -4,6 +4,8 @@
  */
 package vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author thoma
@@ -538,11 +540,37 @@ public class IngresarUsuario extends javax.swing.JPanel {
         ingresarUsuario.revalidate();
         ingresarUsuario.repaint();
     }//GEN-LAST:event_jLabel_menuMouseClicked
-
+    /**
+     * Este voton hace el control de error para los diferentes inputs del usuario llamando a la funcion de abajo.
+     * @param evt 
+     */
     private void jLabel_registrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_registrarMouseClicked
 
-    }//GEN-LAST:event_jLabel_registrarMouseClicked
+        String nombre = jTextField_nombre.getText();
+        verificarCamposEnBlanco(nombre, "nombre");
 
+        String fecha = jTextField_fNac.getText();
+        verificarCamposEnBlanco(fecha, "fecha");
+
+        String direccion = jTextField_direccion.getText();
+        verificarCamposEnBlanco(direccion, "direccion");
+ 
+        String comuna = jTextField_comuna.getText();
+        verificarCamposEnBlanco(comuna, "comuna");
+
+
+        String rut = jTextField_rut.getText();
+        verificarCamposEnBlanco(rut, "rut");
+
+        String correo = jTextField_correo.getText();
+        verificarCamposEnBlanco(correo, "correo");
+
+    }//GEN-LAST:event_jLabel_registrarMouseClicked
+    public void verificarCamposEnBlanco(String campo,String nombre){
+        if(campo.equals("")){
+            JOptionPane.showMessageDialog(null,"El/La "+nombre+" no puede estar en blanco.");
+        }
+    }
     private void ingresarUsuarioMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingresarUsuarioMouseDragged
         //BORRAR
     }//GEN-LAST:event_ingresarUsuarioMouseDragged

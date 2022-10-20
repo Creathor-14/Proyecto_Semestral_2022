@@ -200,12 +200,12 @@ public class Login extends javax.swing.JPanel {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        IngresarDesarrollador ingresardesarrollador = new IngresarDesarrollador();
-        ingresardesarrollador.setSize(660, 460);
-        ingresardesarrollador.setLocation(0,0);
+        IngresarUsuario ingresarU = new IngresarUsuario();
+        ingresarU.setSize(660, 460);
+        ingresarU.setLocation(0,0);
 
         login.removeAll();
-        login.add(ingresardesarrollador,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
+        login.add(ingresarU,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
         login.revalidate();
         login.repaint();
     }//GEN-LAST:event_jButton1MouseClicked
