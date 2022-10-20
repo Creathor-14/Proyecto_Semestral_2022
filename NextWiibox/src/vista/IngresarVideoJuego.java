@@ -4,6 +4,8 @@
  */
 package vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author reeso
@@ -473,7 +475,7 @@ public class IngresarVideoJuego extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ingresarVideoJuego, javax.swing.GroupLayout.DEFAULT_SIZE, 808, Short.MAX_VALUE)
+            .addComponent(ingresarVideoJuego, javax.swing.GroupLayout.DEFAULT_SIZE, 660, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -580,9 +582,38 @@ public class IngresarVideoJuego extends javax.swing.JPanel {
     }//GEN-LAST:event_jLabel_menuMouseClicked
 
     private void jLabel_registrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_registrarMouseClicked
+        
+        String codigo = jTextField_codigo.getText();
+        verificarCamposEnBlanco(codigo, "codigo");
 
+        String nombre = jTextField_nombre.getText();
+        verificarCamposEnBlanco(nombre, "nombre");
+
+        String version = jTextField_version.getText();
+        verificarCamposEnBlanco(version, "version");
+ 
+        String fecha = jTextField_fecha.getText();
+        verificarCamposEnBlanco(fecha, "fecha");
+
+        String categoria = jTextField_categoria.getText();
+        verificarCamposEnBlanco(categoria, "categoria");
+
+        String genero = jTextField_genero.getText();
+        verificarCamposEnBlanco(genero, "genero");
+        
+        String precio = jTextField_precio.getText();
+        verificarCamposEnBlanco(precio, "precio");
+        
+        String desarrollador = jTextField_desarrollador.getText();
+        verificarCamposEnBlanco(desarrollador, "desarrollador");
     }//GEN-LAST:event_jLabel_registrarMouseClicked
-
+    
+    public void verificarCamposEnBlanco(String campo,String nombre){
+        if(campo.equals("")){
+            JOptionPane.showMessageDialog(null,"El/La "+nombre+" no puede estar en blanco.");
+        }
+    }
+    
     private void ingresarVideoJuegoMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingresarVideoJuegoMouseDragged
         //BORRAR
     }//GEN-LAST:event_ingresarVideoJuegoMouseDragged
