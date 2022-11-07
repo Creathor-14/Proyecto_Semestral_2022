@@ -4,7 +4,7 @@
  */
 package vista;
 
-import java.awt.BorderLayout;
+
 
 /**
  *
@@ -12,9 +12,7 @@ import java.awt.BorderLayout;
  */
 public class Login extends javax.swing.JPanel {
 
-    /**
-     * Creates new form Login
-     */
+    
     public Login() {
         initComponents();
     }
@@ -128,7 +126,7 @@ public class Login extends javax.swing.JPanel {
 
         login.add(jPanel_entrar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 261, -1, -1));
 
-        jButton1.setText("jButton1");
+        jButton1.setText("ADMIN");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -186,26 +184,26 @@ public class Login extends javax.swing.JPanel {
         
         // Llamar a un panel
         //https://www.youtube.com/watch?v=iFlHGwmYdjI&t=1s
-        Menu menu = new Menu();
-        menu.setSize(660, 460);
-        menu.setLocation(0,0);
+        
+        Menu_vendedor menu_admin = new Menu_vendedor();
+        menu_admin.setSize(660, 460);
+        menu_admin.setLocation(0,0);
 
         login.removeAll();
-        login.add(menu,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
+        login.add(menu_admin,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
         login.revalidate();
         login.repaint();
-
         
     }//GEN-LAST:event_jLabel_Acceder1MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        IngresarUsuario ingresarU = new IngresarUsuario();
-        ingresarU.setSize(660, 460);
-        ingresarU.setLocation(0,0);
+        Menu_administrador menu = new Menu_administrador();
+        menu.setSize(660, 460);
+        menu.setLocation(0,0);
 
         login.removeAll();
-        login.add(ingresarU,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
+        login.add(menu,new org.netbeans.lib.awtextra.AbsoluteConstraints(0,0,-1,-1));
         login.revalidate();
         login.repaint();
     }//GEN-LAST:event_jButton1MouseClicked

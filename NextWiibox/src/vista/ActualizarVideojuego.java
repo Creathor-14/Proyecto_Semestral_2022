@@ -6,14 +6,14 @@ package vista;
 
 /**
  *
- * @author thoma
+ * @author HP Desktop
  */
-public class ActualizarUsuario extends javax.swing.JPanel {
+public class ActualizarVideojuego extends javax.swing.JPanel {
 
     /**
-     * Creates new form EliminarUsuario
+     * Creates new form ActualizarVideojuego
      */
-    public ActualizarUsuario() {
+    public ActualizarVideojuego() {
         initComponents();
     }
 
@@ -26,7 +26,7 @@ public class ActualizarUsuario extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel_actusuario = new javax.swing.JPanel();
+        jPanel_actvideojuego = new javax.swing.JPanel();
         jLabel_Titulo = new javax.swing.JLabel();
         jLabel_rut = new javax.swing.JLabel();
         jTextField_rut = new javax.swing.JTextField();
@@ -53,109 +53,111 @@ public class ActualizarUsuario extends javax.swing.JPanel {
         jLabel_buscar = new javax.swing.JLabel();
         jPanel_actualizar = new javax.swing.JPanel();
         jLabel_actualizar = new javax.swing.JLabel();
+        jLabel_fNac1 = new javax.swing.JLabel();
+        jSeparator_fNac1 = new javax.swing.JSeparator();
 
-        jPanel_actusuario.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel_actusuario.setForeground(new java.awt.Color(51, 51, 51));
-        jPanel_actusuario.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel_actvideojuego.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel_actvideojuego.setForeground(new java.awt.Color(51, 51, 51));
+        jPanel_actvideojuego.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel_Titulo.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_Titulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel_Titulo.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_Titulo.setText("Actualizar Usuario");
-        jPanel_actusuario.add(jLabel_Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
+        jLabel_Titulo.setText("Actualizar VideoJuego");
+        jPanel_actvideojuego.add(jLabel_Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
 
         jLabel_rut.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_rut.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_rut.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_rut.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_rut.setText("Rut:");
-        jPanel_actusuario.add(jLabel_rut, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 130, -1));
+        jLabel_rut.setText("Codigo:");
+        jPanel_actvideojuego.add(jLabel_rut, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 130, -1));
 
         jTextField_rut.setBackground(new java.awt.Color(51, 51, 51));
         jTextField_rut.setForeground(new java.awt.Color(102, 102, 102));
         jTextField_rut.setText("00.000.000-K");
         jTextField_rut.setBorder(null);
-        jPanel_actusuario.add(jTextField_rut, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 270, -1));
-        jPanel_actusuario.add(jSeparator_rut, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 270, 10));
+        jPanel_actvideojuego.add(jTextField_rut, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 270, -1));
+        jPanel_actvideojuego.add(jSeparator_rut, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 270, 10));
 
         jLabel_nombre.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_nombre.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_nombre.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_nombre.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_nombre.setText("Nombre:");
-        jPanel_actusuario.add(jLabel_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 130, -1));
+        jLabel_nombre.setText("Version:");
+        jPanel_actvideojuego.add(jLabel_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 130, -1));
 
         jTextField_nombre.setBackground(new java.awt.Color(51, 51, 51));
         jTextField_nombre.setForeground(new java.awt.Color(102, 102, 102));
         jTextField_nombre.setBorder(null);
-        jPanel_actusuario.add(jTextField_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 270, -1));
-        jPanel_actusuario.add(jSeparator_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 270, 10));
+        jPanel_actvideojuego.add(jTextField_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 270, -1));
+        jPanel_actvideojuego.add(jSeparator_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 270, 10));
 
         jLabel_correo.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_correo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_correo.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_correo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_correo.setText("Correo:");
-        jPanel_actusuario.add(jLabel_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 130, -1));
+        jLabel_correo.setText("Nombre:");
+        jPanel_actvideojuego.add(jLabel_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 130, -1));
 
         jTextField_correo.setEditable(false);
         jTextField_correo.setBackground(new java.awt.Color(51, 51, 51));
         jTextField_correo.setForeground(new java.awt.Color(102, 102, 102));
         jTextField_correo.setBorder(null);
-        jPanel_actusuario.add(jTextField_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 270, -1));
-        jPanel_actusuario.add(jSeparator_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 270, 10));
+        jPanel_actvideojuego.add(jTextField_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 270, -1));
+        jPanel_actvideojuego.add(jSeparator_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 270, 10));
 
         jLabel_comuna.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_comuna.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_comuna.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_comuna.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_comuna.setText("Comuna:");
-        jPanel_actusuario.add(jLabel_comuna, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 130, -1));
+        jLabel_comuna.setText("Fecha:");
+        jPanel_actvideojuego.add(jLabel_comuna, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 130, -1));
 
         jTextField_comuna.setBackground(new java.awt.Color(51, 51, 51));
         jTextField_comuna.setForeground(new java.awt.Color(102, 102, 102));
         jTextField_comuna.setBorder(null);
-        jPanel_actusuario.add(jTextField_comuna, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 270, -1));
-        jPanel_actusuario.add(jSeparator_comuna, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 270, 10));
+        jPanel_actvideojuego.add(jTextField_comuna, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 270, -1));
+        jPanel_actvideojuego.add(jSeparator_comuna, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 270, 10));
 
         jLabel_direccion.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_direccion.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_direccion.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_direccion.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_direccion.setText("Direccion:");
-        jPanel_actusuario.add(jLabel_direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 130, -1));
+        jLabel_direccion.setText("Categoria:");
+        jPanel_actvideojuego.add(jLabel_direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 130, -1));
 
         jTextField_direccion.setBackground(new java.awt.Color(51, 51, 51));
         jTextField_direccion.setForeground(new java.awt.Color(102, 102, 102));
         jTextField_direccion.setBorder(null);
-        jPanel_actusuario.add(jTextField_direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 270, -1));
-        jPanel_actusuario.add(jSeparator_direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 270, 10));
+        jPanel_actvideojuego.add(jTextField_direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 270, -1));
+        jPanel_actvideojuego.add(jSeparator_direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 270, 10));
 
         jLabel_telefono.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_telefono.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_telefono.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_telefono.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_telefono.setText("Telefono:");
-        jPanel_actusuario.add(jLabel_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 130, -1));
+        jLabel_telefono.setText("Genero:");
+        jPanel_actvideojuego.add(jLabel_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 130, -1));
 
         jTextField_telefono.setBackground(new java.awt.Color(51, 51, 51));
         jTextField_telefono.setForeground(new java.awt.Color(102, 102, 102));
         jTextField_telefono.setBorder(null);
-        jPanel_actusuario.add(jTextField_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 270, -1));
-        jPanel_actusuario.add(jSeparator_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 270, 10));
+        jPanel_actvideojuego.add(jTextField_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 270, -1));
+        jPanel_actvideojuego.add(jSeparator_telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 270, 10));
 
         jLabel_fNac.setBackground(new java.awt.Color(255, 255, 255));
         jLabel_fNac.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_fNac.setForeground(new java.awt.Color(255, 255, 255));
         jLabel_fNac.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel_fNac.setText("Fecha nacimiento:");
-        jPanel_actusuario.add(jLabel_fNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 130, -1));
+        jLabel_fNac.setText("Precio:");
+        jPanel_actvideojuego.add(jLabel_fNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 130, -1));
 
         jTextField_fNac.setBackground(new java.awt.Color(51, 51, 51));
         jTextField_fNac.setForeground(new java.awt.Color(102, 102, 102));
         jTextField_fNac.setBorder(null);
-        jPanel_actusuario.add(jTextField_fNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, 270, -1));
-        jPanel_actusuario.add(jSeparator_fNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 270, 10));
+        jPanel_actvideojuego.add(jTextField_fNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, 270, -1));
+        jPanel_actvideojuego.add(jSeparator_fNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 270, 10));
 
         jPanel_buscar.setBackground(new java.awt.Color(0, 153, 153));
 
@@ -184,7 +186,7 @@ public class ActualizarUsuario extends javax.swing.JPanel {
                 .addComponent(jLabel_buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel_actusuario.add(jPanel_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, -1, -1));
+        jPanel_actvideojuego.add(jPanel_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, -1, -1));
 
         jPanel_actualizar.setBackground(new java.awt.Color(0, 153, 153));
 
@@ -213,7 +215,15 @@ public class ActualizarUsuario extends javax.swing.JPanel {
                 .addComponent(jLabel_actualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel_actusuario.add(jPanel_actualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, -1, -1));
+        jPanel_actvideojuego.add(jPanel_actualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 410, -1, -1));
+
+        jLabel_fNac1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel_fNac1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel_fNac1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel_fNac1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jLabel_fNac1.setText("Rut desarrollador:");
+        jPanel_actvideojuego.add(jLabel_fNac1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 130, -1));
+        jPanel_actvideojuego.add(jSeparator_fNac1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 370, 270, 10));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -223,7 +233,7 @@ public class ActualizarUsuario extends javax.swing.JPanel {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, 0)
-                    .addComponent(jPanel_actusuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel_actvideojuego, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGap(0, 0, 0)))
         );
         layout.setVerticalGroup(
@@ -232,35 +242,36 @@ public class ActualizarUsuario extends javax.swing.JPanel {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, 0)
-                    .addComponent(jPanel_actusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel_actvideojuego, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel_buscarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_buscarMouseClicked
         //Buscar al usuario segun el rut
-        String [] datosUsuario = new String[6];
-        String correo = datosUsuario[0];
-        String nombre = datosUsuario[1];
-        String comuna = datosUsuario[2];
-        String direccion = datosUsuario[3];
-        String telefono = datosUsuario[4];
-        String fechaNacimiento = datosUsuario[5];
-        jTextField_correo.setText(correo);
+        String [] datosVideojuego = new String[8];
+        String codigo = datosVideojuego[0];
+        String nombre = datosVideojuego[1];
+        String version = datosVideojuego[2];
+        String fecha = datosVideojuego[3];
+        String categoria = datosVideojuego[4];
+        String genero = datosVideojuego[5];
+        String precio = datosVideojuego[6];
+        String rutdesarrollador = datosVideojuego[7];
+        jTextField_correo.setText(codigo);
         jTextField_nombre.setText(nombre);
-        jTextField_comuna.setText(comuna);
-        jTextField_direccion.setText(direccion);
-        jTextField_telefono.setText(telefono);
-        jTextField_fNac.setText(fechaNacimiento);
+        jTextField_comuna.setText(version);
+        jTextField_direccion.setText(fecha);
+        jTextField_telefono.setText(categoria);
+        jTextField_fNac.setText(genero);
+        jTextField_fNac.setText(precio);
+        jTextField_fNac.setText(rutdesarrollador);
+        
     }//GEN-LAST:event_jLabel_buscarMouseClicked
 
     private void jLabel_actualizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_actualizarMouseClicked
         // Guardar los datos nuevos
     }//GEN-LAST:event_jLabel_actualizarMouseClicked
-
-    private void actualizarUsuarioMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_actualizarUsuarioMouseDragged
-        //BORRAR
-    }//GEN-LAST:event_actualizarUsuarioMouseDragged
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -271,16 +282,18 @@ public class ActualizarUsuario extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel_correo;
     private javax.swing.JLabel jLabel_direccion;
     private javax.swing.JLabel jLabel_fNac;
+    private javax.swing.JLabel jLabel_fNac1;
     private javax.swing.JLabel jLabel_nombre;
     private javax.swing.JLabel jLabel_rut;
     private javax.swing.JLabel jLabel_telefono;
     private javax.swing.JPanel jPanel_actualizar;
-    private javax.swing.JPanel jPanel_actusuario;
+    private javax.swing.JPanel jPanel_actvideojuego;
     private javax.swing.JPanel jPanel_buscar;
     private javax.swing.JSeparator jSeparator_comuna;
     private javax.swing.JSeparator jSeparator_correo;
     private javax.swing.JSeparator jSeparator_direccion;
     private javax.swing.JSeparator jSeparator_fNac;
+    private javax.swing.JSeparator jSeparator_fNac1;
     private javax.swing.JSeparator jSeparator_nombre;
     private javax.swing.JSeparator jSeparator_rut;
     private javax.swing.JSeparator jSeparator_telefono;
